@@ -1,0 +1,9 @@
+# Task 5 - Rebase
+
+## Description
+
+Rebase your branch to keep it single
+
+## Hint
+
+- `git rebase`

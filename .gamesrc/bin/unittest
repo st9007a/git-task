@@ -1,0 +1,26 @@
+#!/usr/bin/env sh
+./game-start
+
+git add .
+git commit -m "Level 1"
+
+git checkout -b feature1
+git add .
+git commit -m "Level 2"
+
+git add .
+git commit -m "Level 3"
+git checkout master
+git merge feature1
+
+git checkout -b feature2
+git add .
+git commit -m "Level 4.1"
+
+git add .
+git commit -m "Level 4.2"
+git checkout master
+
+git add .
+git commit -m "Level 4.3"
+git merge feature2

@@ -1,0 +1,12 @@
+#!/usr/bin/env sh
+. ./.gamesrc/config
+
+# git hook
+/bin/rm .git/hooks/ -rf
+cp -r $hooks .git/hooks
+
+# clean tmp file
+$bin/cleandata
+
+echo 0 > $data/merge
+$bin/gentask 1

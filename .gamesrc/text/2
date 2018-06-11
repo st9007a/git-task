@@ -1,0 +1,11 @@
+# Task 2 - Checkout
+
+## Description
+
+1. Checkout to new branch named "feature1"
+2. And then commit current change to branch "feature1"
+
+## Hint
+
+- `git branch`
+- `git checkout`

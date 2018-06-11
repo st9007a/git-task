@@ -1,0 +1,7 @@
+#!/usr/bin/env sh
+. .gamesrc/config
+
+/bin/rm -rf $data
+mkdir $data
+
+/bin/rm $task -f

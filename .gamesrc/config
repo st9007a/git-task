@@ -1,0 +1,8 @@
+#!/usr/bin/env sh
+
+task="task.md"
+template="./.gamesrc/text/"
+hooks="./.gamesrc/hooks/"
+data="./.gamesrc/data/"
+bin="./.gamesrc/bin/"
+

@@ -1,0 +1,40 @@
+#!/bin/bash
+
+. ./.gamesrc/config
+stage="`cat $data/stage`"
+branch="`git rev-parse --abbrev-ref HEAD`"
+
+if [ $stage = "1" ]; then
+	$bin/gentask 2
+elif [ "$stage" = "2" ]; then
+	if [ "$branch" = "feature1" ]; then
+		$bin/gentask 3
+	fi
+elif [ "$stage" = "4.1" ]; then
+	if [ "$branch" = "feature2" ]; then
+		$bin/gentask 4.2
+		echo 1 > $data/merge
+	fi
+elif [ "$stage" = "4.3" ]; then
+
+	if [ ! -f $data/tmp ]; then
+		touch $data/tmp
+	elif [ "`cat $data/merge`" = "0" ]; then
+		echo "You should merge branch first."
+		exit 1
+	elif [ "`cat $data/merge`" = "1" ]; then
+
+		# Check if conflict is solved
+		for f in `git diff HEAD --name-only --diff-filter=M`; do
+			if [ -f $f ]; then
+				if grep -q "<<<<<<<" $f; then
+					echo "You should solve conflict before commit."
+					exit 1
+				fi
+			fi
+		done
+
+		$bin/gentask 5
+		/bin/rm -f $data/tmp
+	fi
+fi

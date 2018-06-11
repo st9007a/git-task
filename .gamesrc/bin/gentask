@@ -1,0 +1,3 @@
+#!/usr/bin/env sh
+echo "$1" > .gamesrc/data/stage
+cat ./.gamesrc/text/$1 > task.md

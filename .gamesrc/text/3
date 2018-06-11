@@ -1,0 +1,10 @@
+# Task 3 - Auto merge
+
+## Description
+
+Commit current change, and then merge this branch to "master"
+
+## Hint
+
+- `git checkout`
+- `git merge`
