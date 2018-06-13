@@ -4,7 +4,7 @@
 stage="`cat $data/stage`"
 branch="`git rev-parse --abbrev-ref HEAD`"
 
-if [ $stage = "1" ]; then
+if [ "$stage" = "1" ]; then
 	$bin/gentask 2
 elif [ "$stage" = "2" ]; then
 	if [ "$branch" = "feature1" ]; then
@@ -35,6 +35,7 @@ elif [ "$stage" = "4.3" ]; then
 		done
 
 		$bin/gentask 5
+		echo 1 > $data/revert
 		/bin/rm -f $data/tmp
 	fi
 fi

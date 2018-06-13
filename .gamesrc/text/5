@@ -1,9 +1,10 @@
-# Task 5 - Rebase
+# Task 5 - Revert
 
 ## Description
 
-Rebase your branch to keep it single
+1. Commit current change
+2. Revert to previous commit :P
 
 ## Hint
 
-- `git rebase`
+- `git revert`
