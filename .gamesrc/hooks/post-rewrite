@@ -1,0 +1,11 @@
+#!/bin/bash
+
+. ./.gamesrc/config
+stage="`cat $data/stage`"
+branch="`git rev-parse --abbrev-ref HEAD`"
+
+if [ "$stage" = "6" ]; then
+	if [ "$1" = "rebase" ]; then
+		$bin/gentask 7
+	fi
+fi
