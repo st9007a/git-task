@@ -2,6 +2,14 @@
 
 ## Description
 
+Checkout is a common command in git. You can use this command to check previous commit or go to other branch.
+
+Now, you should create a new branch and go to that branch.
+
+See below.
+
+## Steps
+
 1. Checkout to new branch named "feature1"
 2. And then commit current change to branch "feature1"
 
