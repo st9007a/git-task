@@ -1,12 +1,20 @@
 # Task 2 - Checkout
 
+## Discuss About Previous Task
+
+After this task, your branch will like this:
+
+```
+* (HEAD -> master) Task 1
+```
+
+HEAD means your current position, and master means your current branch.
+
 ## Description
 
 Checkout is a common command in git. You can use this command to check previous commit or go to other branch.
 
 Now, you should create a new branch and go to that branch.
-
-See below.
 
 ## Steps
 
