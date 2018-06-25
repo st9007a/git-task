@@ -36,3 +36,21 @@ But Task 6 is generate, so the content of task file is different from the conten
 You can use `git stash` to stash current change and check task file.
 
 ## Description
+
+Welcome to the most difficult task !
+
+In this task, you should rearrange the nodes: "Task 4.1", "Task 4.2" and "Task 4.3".
+
+Let these nodes locate at the same branch
+
+## Steps
+
+1. Commit current change
+2. Rebase "feature2" branch
+
+## Hint
+
+- `git rebase`
+- `git rebase --abort`
+- `git rebase --continue`
+- `git rebase --skip`

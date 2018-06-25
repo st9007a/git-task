@@ -16,8 +16,6 @@ Checkout is a common command in git. You can use this command to check previous 
 
 Now, you should create a new branch and go to that branch.
 
-See below.
-
 ## Steps
 
 1. Checkout to new branch named "feature1"
