@@ -5,7 +5,7 @@
 After rebase "feature2", your log will like this:
 
 ```
-* Task 6
+* (HEAD -> master) Task 6
 |
 |
 * Revert "Task 5"
@@ -50,10 +50,6 @@ It's time to tell you the secret of this game - Why a new task is generated when
 Yes, I use git hook to control all process of this game.
 
 Now, I hide a task in git hook. Find it and Finish it.
-
-## Steps
-
-No step
 
 ## Hint
 
