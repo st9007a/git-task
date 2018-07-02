@@ -2,7 +2,7 @@
 
 ## Description
 
-A game to learning how to use git
+A game to learn how to use git
 
 ## Getting Started
 
