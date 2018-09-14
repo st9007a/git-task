@@ -2,7 +2,7 @@
 
 ## Discuss About Previous Task
 
-After rebase "feature2", your log will like this:
+After rebase "feature2", your log will be like the follow:
 
 ```
 * (HEAD -> master) Task 6
@@ -47,7 +47,7 @@ If conflict is not cause. The process of rebase will complete automatically. You
 
 It's time to tell you the secret of this game - Why a new task is generated when you finish a task ?
 
-Yes, I use git hook to control all process of this game.
+Yes, I use git hook to control all flow of this game.
 
 Now, I hide a task in git hook. Find it and Finish it.
 

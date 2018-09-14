@@ -2,7 +2,7 @@
 
 ## Discuss About Previous Task
 
-After commit change to "master" branch, your log will like this:
+After commit change to "master" branch, your log will be like the follow:
 
 ```
 * (HEAD -> master) Task 4.3
@@ -22,7 +22,7 @@ After commit change to "master" branch, your log will like this:
 
 Because you commit a change to "master" branch, the history has two branches.
 
-After merge and commit, your log will like this:
+After merge and commit, your log will be like the follow:
 
 ```
 * (HEAD -> master) Merge branch 'feature2'

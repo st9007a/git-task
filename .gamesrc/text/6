@@ -2,7 +2,7 @@
 
 ## Discuss About Previous Task
 
-After revert the commit, your log will like this:
+After revert the commit, your log will be like the follow:
 
 ```
 * (HEAD -> master) Revert "Task 5"
