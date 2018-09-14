@@ -10,3 +10,6 @@ $bin/cleandata
 
 echo 0 > $data/merge
 $bin/gentask 1
+
+git branch -d feature1
+git branch -d feature2
