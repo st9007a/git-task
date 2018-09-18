@@ -11,5 +11,10 @@ $bin/cleandata
 echo 0 > $data/merge
 $bin/gentask 1
 
-git branch -d feature1
-git branch -d feature2
+if [ -n "`git show-ref refs/heads/feature1`" ]; then
+	git branch -d feature1
+fi
+
+if [ -n "`git show-ref refs/heads/feature2`" ]; then
+	git branch -d feature2
+fi
